@@ -1,5 +1,5 @@
 # Function Plotter
-
+![example](https://github.com/abdelrahman99999/master_micro_tasks/blob/main/task1/screenshots%20for%20application/1.PNG?raw=true)
 ## programming language
 c++ / C programming languages
 
@@ -14,8 +14,8 @@ c++ / C programming languages
 - Doxygen 
 
 ## External Libraries 
-tinyexpr - https://github.com/codeplea/tinyexpr
-qcustomplot - https://www.qcustomplot.com/
+- tinyexpr - https://github.com/codeplea/tinyexpr
+- qcustomplot - https://www.qcustomplot.com/
 
 ## Demo
 
