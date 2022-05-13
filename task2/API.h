@@ -31,7 +31,7 @@ protected:
 public:
 
     Result readJson(string FileName);
-    Result writeJson(string FileName);
+    Result writeJson(string TopologyID);
     Result deleteTopology(string TopologyID);
     TopologyList queryTopologies();
     DeviceList queryDevices(string TopologyID);

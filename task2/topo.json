@@ -27,6 +27,34 @@
         "gate": "vin",
         "source": "vss"
       }
+    },
+    {
+      "type": "test",
+      "id": "test1111",
+      "m(l)": {
+        "default": 1.5,
+        "min": 1,
+        "max": 2
+      },
+      "netlist": {
+        "drain": "n1",
+        "gate": "vin",
+        "source": "vss"
+      }
+    },
+    {
+      "type": "test2",
+      "id": "test2222",
+      "m(l)": {
+        "default": 1.5,
+        "min": 1,
+        "max": 2
+      },
+      "netlist": {
+        "drain": "n1",
+        "gate": "vin",
+        "source": "vss"
+      }
     }
   ]
 }

@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri May 13 15:19:25 2022
+# Make data base, printed on Fri May 13 15:42:02 2022
 
 # Variables
 
@@ -41,7 +41,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/abdelrahman/Desktop/task2
+CURDIR := /home/abdelrahman/Desktop/master_micro_tasks/task2
 # makefile
 SHELL = /bin/sh
 # environment
@@ -81,7 +81,7 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 LC_NAME = ar_EG.UTF-8
 # environment
-VSCODE_CWD = /home/abdelrahman/Desktop/task2
+VSCODE_CWD = /home/abdelrahman/Desktop/master_micro_tasks/task2
 # environment
 GSETTINGS_SCHEMA_DIR = /snap/code/96/usr/share/glib-2.0/schemas
 # default
@@ -129,7 +129,7 @@ VSCODE_PIPE_LOGGING = true
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
-PWD = /home/abdelrahman/Desktop/task2
+PWD = /home/abdelrahman/Desktop/master_micro_tasks/task2
 # makefile (from 'Makefile', line 3)
 CPP_FILES := *.cpp
 # default
@@ -191,7 +191,7 @@ CC = g++
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d5ad44a7-ed81-4135-86ba-c76efc181057.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a9d677cf-6ceb-46b2-bfd9-a776bb57f6b3.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -247,11 +247,11 @@ LC_ALL = C
 # environment
 DBUS_STARTER_BUS_TYPE = session
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/8ccb43f9_462c_473d_adad_32bbedb4cc81
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/9ae21da8_cd18_4fd7_b1c6_5de2438bd179
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.2263
+GNOME_TERMINAL_SERVICE = :1.2322
 # default
 SUFFIXES := 
 # environment
@@ -273,11 +273,12 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 14126
+VSCODE_PID = 15735
 # environment
 DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=abdecaaeef93f9036cd2803c627e3dac
 # variable set hash-table stats:
 # Load=132/1024=13%, Rehash=0, Collisions=20/157=13%
+ 
 
 # Pattern-specific Variable Values
 
@@ -299,7 +300,6 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=abdecaaeef93f9036cd2803
 all:
 #  Command line target.
 #  Implicit rule search has been done.
- 
 #  File does not exist.
 #  File has not been updated.
 
@@ -344,6 +344,6 @@ run:
 # strcache performance: lookups = 29 / hit rate = 20%
 # hash-table stats:
 # Load=23/8192=0%, Rehash=0, Collisions=1/29=3%
-# Finished Make data base on Fri May 13 15:19:25 2022
+# Finished Make data base on Fri May 13 15:42:02 2022
 
  

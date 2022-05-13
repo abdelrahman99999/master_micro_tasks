@@ -17,6 +17,15 @@
 #include "Component.h"
 using namespace std;
 
+
+class NO_FILE : public exception{  
+    public:  
+        const char * what() const throw()  
+        {  
+            return "error! maybe the file doesn't exist";  
+        }  
+}; 
+
 /**
  * @brief need if no topology is found with same topology id 
  * 
@@ -37,7 +46,7 @@ class EMPTY_JSON : public exception{
     public:  
         const char * what() const throw()  
         {  
-            return "the json object is empty";  
+            return "the json object is empty (empty memory)";  
         }  
 };
 

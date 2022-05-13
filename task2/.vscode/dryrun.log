@@ -1,5 +1,5 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/abdelrahman/Desktop/task2'
+make: Entering directory '/home/abdelrahman/Desktop/master_micro_tasks/task2'
 g++ *.cpp -ljsoncpp -o main.exe
-make: Leaving directory '/home/abdelrahman/Desktop/task2'
+make: Leaving directory '/home/abdelrahman/Desktop/master_micro_tasks/task2'
  

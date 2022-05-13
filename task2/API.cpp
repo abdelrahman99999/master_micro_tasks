@@ -9,6 +9,7 @@
  */
 
 #include "API.h"
+#include <filesystem>
 /**
  * @brief Construct a new Result:: Result object
  * 
@@ -32,7 +33,12 @@ Result::~Result(){
  * @return Result 
  */
 Result Result::readJson(string FileName){
+
     ifstream input_handler(FileName, std::ifstream::binary);
+    if(!input_handler.is_open())
+    {
+        throw NO_FILE();
+    }
     input_handler >> this->Json_obj;
     input_handler.close();
     return *this;
@@ -41,15 +47,45 @@ Result Result::readJson(string FileName){
 /**
  * @brief Write a given topology from the memory to a JSON file.
  * 
- * @param FileName name with extension of file of json
+ * @param TopologyID 
  * @return Result 
  */
-Result Result::writeJson(string FileName){
+Result Result::writeJson(string TopologyID){
     ofstream output_handler;
-    output_handler.open(FileName);
-    output_handler << this->Json_obj<<endl;
+    output_handler.open("output.json");
+    
+    /////////////////////////////////////////////////
+    if(Json_obj.empty()==true){//if object is [ ] or { } only
+        throw EMPTY_JSON();
+    }
+
+    if(Json_obj.isArray()==false ){     //if there is only one topology (not in list)
+        if(Json_obj["id"].asString()==TopologyID){//if you find topology
+            output_handler << this->Json_obj<<endl;
+        }else{
+            throw NOT_FOUND_TOPOLOGY();
+        }
+    }else{  //if there are list of topologies
+        int flag=0;//flag used to know if no topology is found with the given topology id 
+        for (Json::ValueIterator topo_iterator = this->Json_obj.begin(); topo_iterator != this->Json_obj.end(); ++topo_iterator){
+            /*loop on topologies*/
+            if(0 != (*topo_iterator)["id"].asString().compare(TopologyID))//if you don't find this topolgy
+            {
+                //
+            }else{
+                //if you find this topolgy
+                flag=1;
+                output_handler << (*topo_iterator)<<endl;
+                break;
+            }
+        }
+        if(flag==0){
+            throw NOT_FOUND_TOPOLOGY();
+        }
+
+    }
     output_handler.close();
-    return *this;        
+    return *this;
 }
 
 /**
@@ -66,7 +102,7 @@ Result Result::deleteTopology(string TopologyID){
 
     if(Json_obj.isArray()==false ){     //if there is only one topology (not in list)
         if(Json_obj["id"].asString()==TopologyID){//if you find topology
-            this->Json_obj.clear();
+            this->Json_obj={};
         }else{
             throw NOT_FOUND_TOPOLOGY();
         }
