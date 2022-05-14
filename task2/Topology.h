@@ -12,8 +12,7 @@
 
 #include <string>
 #include <vector>
-#include "Component.h"
-
+#include <jsoncpp/json/json.h>
 using namespace std;
 
 /**
@@ -23,12 +22,23 @@ using namespace std;
 class topology{
 private:
     string id;
+    Json::Value components;
 public:
     topology();
     ~topology();
 
     string get_id();
-    void set_id(string);
+    void set_id(string );
+
+    Json::Value get_components();
+    void set_components(Json::Value comp);
 };
+
+
+/**
+ * @brief list of topologies
+ * 
+ */
+typedef vector<topology> TopologyList;
 
 #endif

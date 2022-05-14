@@ -37,3 +37,21 @@ string topology::get_id(){
 void topology::set_id(string id){
     this->id = id;
 }
+
+/**
+ * @brief getter
+ * 
+ * @return Json::Value 
+ */
+Json::Value topology::get_components(){
+    return this->components;
+}
+
+/**
+ * @brief setter
+ * 
+ * @param comp 
+ */
+void topology::set_components(Json::Value comp){
+    this->components=comp;
+}

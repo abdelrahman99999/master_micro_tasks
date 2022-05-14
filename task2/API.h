@@ -16,6 +16,8 @@
 #include <jsoncpp/json/json.h>
 #include "Topology.h"
 #include "API_helper.h"
+#include "Topology.h"
+#include "Component.h"
 using namespace std;
 
 /**

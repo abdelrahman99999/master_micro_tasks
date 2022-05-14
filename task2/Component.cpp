@@ -54,3 +54,21 @@ string Component::get_type(){
 void Component::set_type(string type){
     this->type = type;
 }
+
+/**
+ * @brief getter
+ * 
+ * @return Json::Value 
+ */
+Json::Value Component::get_netlist(){
+    return this->netlist;
+}
+
+/**
+ * @brief setter
+ * 
+ * @param n 
+ */
+void Component::set_netlist(Json::Value n){
+    this->netlist = n;
+}

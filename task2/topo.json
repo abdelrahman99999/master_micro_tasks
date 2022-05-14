@@ -53,7 +53,7 @@
       "netlist": {
         "drain": "n1",
         "gate": "vin",
-        "source": "vss"
+        "source": "gggg"
       }
     }
   ]

@@ -11,7 +11,8 @@
 #define COMPONENT_H_
 
 #include <string>
-
+#include<vector>
+#include <jsoncpp/json/json.h>
 using namespace std;
 /**
  * @brief general class for component(device) 
@@ -21,6 +22,7 @@ class Component{
 private:
     string id;
     string type;
+    Json::Value netlist;
 public:
     Component();
     ~Component();
@@ -29,6 +31,14 @@ public:
     string get_type();
     void set_id(string id);
     void set_type(string type);
+    Json::Value get_netlist();
+    void set_netlist(Json::Value n);
 };
 
+
+/**
+ * @brief list of devices(components)
+ * 
+ */
+typedef vector<Component> DeviceList;
 #endif

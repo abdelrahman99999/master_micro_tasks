@@ -11,10 +11,8 @@
 #ifndef API_HELPER_H
 #define API_HELPER_H
 
-#include<vector>
 #include<exception>
-#include "Topology.h"
-#include "Component.h"
+
 using namespace std;
 
 
@@ -74,17 +72,8 @@ class NO_COMPONENT_WITH_NETLIST_NODE : public exception{
         }  
 }; 
 
-/**
- * @brief list of topologies
- * 
- */
-typedef vector<topology> TopologyList;
 
-/**
- * @brief list of devices(components)
- * 
- */
-typedef vector<Component> DeviceList;
+
 
 
 #endif

@@ -9,8 +9,10 @@
  */
 
 #include "API.h"
+#include"API_test.h"
 #include <exception>
 #include<iostream>
+
 using namespace std;
 
 int main()
@@ -32,17 +34,17 @@ int main()
     cout<<"8. Exit\n\n";
 
     while(1){
-        cout << "\nChoose a valid option\n";
+        cout << "\n>> Choose a valid option\n";
         cin >> option;
         while(option<1 && option>7){
-            cout << "\nChoose a valid option\n";
+            cout << "\n>> Choose a valid option\n";
             cin >> option;
         }
 
         switch (option)        
         {
-            case 1:
-                cout << "\nEnter file name (with extension): ";
+            case 1:{
+                cout << "\n>> Enter file name (with extension): ";
                 cin >> input;
                 try{
                     API.readJson(input);
@@ -50,10 +52,11 @@ int main()
                 }catch(exception &e){
                     cout << e.what() <<"\n";
                 }
-                break;
-            
-            case 2:
-                cout << "\nEnter a valid topology ID: ";
+              
+            }  break;
+
+            case 2:{
+                cout << "\n>> Enter a valid topology ID: ";
                 cin >> input;
                 try{
                     API.writeJson(input);
@@ -61,20 +64,22 @@ int main()
                 }catch(exception &e){
                     cout << e.what() <<"\n";
                 }
-                break;
+            }break;
             
-            case 3:                
+            case 3:{                
                 try{
                     topologies_list = API.queryTopologies();
                     for(int i=0;i<topologies_list.size();i++){
                         cout<<"Topology ID -> "<<topologies_list[i].get_id()<<endl;
+                        //cout<<"Topology Components -> \n"<<topologies_list[i].get_components()<<endl;
                     }              
                 }catch(exception &e){
                     cout << e.what() <<"\n";
                 }
-                break;
-            case 4:
-                cout << "\nEnter a valid topology ID: ";
+            }break;
+
+            case 4:{
+                cout << "\n>> Enter a valid topology ID: ";
                 cin >> input;
                 try{
                     API.deleteTopology(input);
@@ -82,42 +87,54 @@ int main()
                 }catch(exception &e){
                     cout<<e.what()<<endl;
                 }
-                break;
-            case 5:
-                cout << "\nEnter a valid topology ID: ";
+            }break;
+
+            case 5:{
+                cout << "\n>> Enter a valid topology ID: ";
                 cin >> input;
                 try{
                     devices_list = API.queryDevices(input);
-                    for(int i=0;i<devices_list.size();i++)
-                    cout<<"Device ID -> "<<devices_list[i].get_id()<<" \tDevice TYPE -> "<<devices_list[i].get_type()<<endl;
-                }catch(exception &e){
-                    cout<<e.what()<<endl;
-                }
-                break;
-
-            case 6:
-                cout << "\nEnter a valid topology ID: ";
-                cin >> input;
-                cout << "\nEnter a netlist node ID: ";
-                cin >> input2;
-                try{
-                    devices_list = API.queryDevicesWithNetlistNode(input, input2);
                     for(int i=0;i<devices_list.size();i++){
-                        cout<<"Device ID -> "<<devices_list[i].get_id()<<" \tDevice TYPE -> "<<devices_list[i].get_type()<<endl;
+                        cout<<"Device ID -> "<<devices_list[i].get_id()<<endl;
+                        cout<<"Device TYPE -> "<<devices_list[i].get_type()<<endl;
+                        cout<<"Device netlist -> \n"<<devices_list[i].get_netlist()<<endl;
                     }
                 }catch(exception &e){
                     cout<<e.what()<<endl;
                 }
-                break;
+            }break;
 
-            case 7:
-                //testing
-                break;
+            case 6:{
+                cout << "\n>> Enter a valid topology ID: ";
+                cin >> input;
+                cout << "\n>> Enter a netlist node ID: ";
+                cin >> input2;
+                try{
+                    devices_list = API.queryDevicesWithNetlistNode(input, input2);
+                    for(int i=0;i<devices_list.size();i++){
+                        cout<<"Device ID -> "<<devices_list[i].get_id()<<endl;
+                        cout<<"Device TYPE -> "<<devices_list[i].get_type()<<endl;
+                        cout<<"Device netlist -> \n"<<devices_list[i].get_netlist()<<endl;
+                    }
+                }catch(exception &e){
+                    cout<<e.what()<<endl;
+                }
+            }break;
+
+            case 7:{
+                API_Test test;
+                test.readJson_test();
+                test.writeJson_test();
+                test.queryTopologies_test();
+                test.queryDevices_test();
+                test.queryDevicesWithNetlistNode_test();
+                test.deleteTopology_test();
+            }break;
+                
             case 8:
                 return 0;
             }
     }
-
 
     return 0;
 }

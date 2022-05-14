@@ -139,16 +139,18 @@ TopologyList Result::queryTopologies(){
     TopologyList result;
     if(Json_obj.isArray()==false ){ //if there is only one topology (not in list)
         //add this topology to our result TopologyList
-        topology* tx = new topology();
-        tx->set_id(Json_obj["id"].asString());
-        result.push_back(*tx);
+        topology* t = new topology();
+        t->set_id(Json_obj["id"].asString());
+        t->set_components(Json_obj["components"]);
+        result.push_back(*t);
     }else{  //if there are list of topologies
         for (Json::ValueIterator topo_iterator = this->Json_obj.begin(); topo_iterator != this->Json_obj.end(); ++topo_iterator){
             /* loop on topologies*/
             //add each topology to our result TopologyList
-            topology* tx = new topology();
-            tx->set_id( (*topo_iterator)["id"].asString() );
-            result.push_back(*tx);
+            topology* t = new topology();
+            t->set_id( (*topo_iterator)["id"].asString() );
+            t->set_components((*topo_iterator)["components"]);
+            result.push_back(*t);
         }     
     }
     return result;
@@ -174,10 +176,11 @@ DeviceList Result::queryDevices(string TopologyID){
             for (Json::ValueIterator compo_iterator = Json_obj["components"].begin(); compo_iterator != Json_obj["components"].end(); ++compo_iterator){
                     /*loop on components */
                     //add each components to our result DeviceList
-                    Component* cx = new Component();
-                    cx->set_id((*compo_iterator)["id"].asString());
-                    cx->set_type((*compo_iterator)["type"].asString());
-                    result.push_back(*cx);
+                    Component* c = new Component();
+                    c->set_id((*compo_iterator)["id"].asString());
+                    c->set_type((*compo_iterator)["type"].asString());
+                    c->set_netlist((*compo_iterator)["netlist"]);
+                    result.push_back(*c);
             }
         }else{//if you don't find topology
             throw NOT_FOUND_TOPOLOGY();
@@ -195,10 +198,11 @@ DeviceList Result::queryDevices(string TopologyID){
                 for (Json::ValueIterator compo_iterator = (*topo_iterator)["components"].begin(); compo_iterator != (*topo_iterator)["components"].end(); ++compo_iterator){
                     /*loop on components */
                     //add each components to our result DeviceList
-                    Component* cx = new Component();
-                    cx->set_id((*compo_iterator)["id"].asString());
-                    cx->set_type((*compo_iterator)["type"].asString());
-                    result.push_back(*cx);
+                    Component* c = new Component();
+                    c->set_id((*compo_iterator)["id"].asString());
+                    c->set_type((*compo_iterator)["type"].asString());
+                    c->set_netlist((*compo_iterator)["netlist"]);
+                    result.push_back(*c);
                 }
             }
         }
@@ -235,10 +239,11 @@ DeviceList Result::queryDevicesWithNetlistNode(string TopologyID,string NetlistN
                     if((*compo_iterator)["netlist"][netlist_item_iter.name()].asString().compare(NetlistNodeID) == 0){//if you find matched component
                         flag=1;
                         /*if find this netlist node id then add the component to our result DeviceList */
-                        Component* cx = new Component();
-                        cx->set_id((*compo_iterator)["id"].asString());
-                        cx->set_type((*compo_iterator)["type"].asString());
-                        result.push_back(*cx);
+                        Component* c = new Component();
+                        c->set_id((*compo_iterator)["id"].asString());
+                        c->set_type((*compo_iterator)["type"].asString());
+                        c->set_netlist((*compo_iterator)["netlist"]);
+                        result.push_back(*c);
                         break;//go to next component
                     }
                 }
@@ -266,10 +271,11 @@ DeviceList Result::queryDevicesWithNetlistNode(string TopologyID,string NetlistN
                         if((*component_iterator)["netlist"][netlist_item_iter.name()].asString().compare(NetlistNodeID) == 0){//if you find matched component
                             flag_for_component=1;
                            /*if find this netlist node id then add the component to our result DeviceList */
-                            Component* cx = new Component();
-                            cx->set_id((*component_iterator)["id"].asString());
-                            cx->set_type((*component_iterator)["type"].asString());
-                            result.push_back(*cx);
+                            Component* c = new Component();
+                            c->set_id((*component_iterator)["id"].asString());
+                            c->set_type((*component_iterator)["type"].asString());
+                            c->set_netlist((*component_iterator)["netlist"]);
+                            result.push_back(*c);
                             break;//go to next component
                         }
                     }
