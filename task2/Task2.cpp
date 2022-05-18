@@ -36,7 +36,7 @@ int main()
     while(1){
         cout << "\n>> Choose a valid option\n";
         cin >> option;
-        while(option<1 && option>7){
+        while(option<1 || option>7){
             cout << "\n>> Choose a valid option\n";
             cin >> option;
         }

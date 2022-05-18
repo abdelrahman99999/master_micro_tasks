@@ -34,7 +34,7 @@ string topology::get_id(){
  * 
  * @param id 
  */
-void topology::set_id(string id){
+void topology::set_id(string &id){
     this->id = id;
 }
 
