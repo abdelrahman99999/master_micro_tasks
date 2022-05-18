@@ -3,6 +3,9 @@
 ## programming language
 c++ / C programming languages
 
+## operating system used
+windows 10
+
 ## Flow 
 1. enter your desired function of x  
 2. specifiy the min value and max value for variable x

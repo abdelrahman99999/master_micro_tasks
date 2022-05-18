@@ -9,6 +9,7 @@
  */
 #include "tinyexpr.h"
 #include<exception>
+#include"math_operation.h"
 /**
  * @brief Construct a new math operation object
  * 

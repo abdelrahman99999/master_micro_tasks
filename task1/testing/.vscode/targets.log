@@ -7,10 +7,8 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 
 # This program built for i386-pc-mingw32
  
-make.exe: *** No rule to make target `all'.  Stop.
 
-
-# Make data base, printed on Sun May 08 19:23:19 2022
+# Make data base, printed on Wed May 18 02:27:17 2022
 
 # Variables
 
@@ -59,13 +57,13 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-9a654186-ffeb-4a81-8433-b657f2785453-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-d1eef970-6162-449d-bb8b-50f81e16e9c5-sock
 # environment
 VSCODE_CWD = D:\learning\master macro internship\tasks\task1\testing
 # makefile (from `makefile', line 9)
 OBJ_FILES := ./tinyexpr.o   ./math_operation.o
 # environment
-PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\CMake\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Git\cmd;C:\Program Files\Graphviz\bin;C:\Program Files\dotnet\;C:\sqlite3;C:\mingw64;C:\mingw64\bin;C;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;C:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\bin
+PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\CMake\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Git\cmd;C:\Program Files\Graphviz\bin;C:\Program Files\dotnet\;C:\sqlite3;C:\mingw64;C:\mingw64\bin;C:\Program Files\Cppcheck;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;C:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\bin
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # environment
@@ -81,13 +79,16 @@ NUMBER_OF_PROCESSORS = 12
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
-.FEATURES := target-specific order-only second-expansion else-if archives
+.FEATURES := target-specific order-only 
+make.exe: *** No rule to make target `all'.  Stop.
+
+ second-expansion else-if archives
 # makefile (from `makefile', line 2)
 EXE_FILE := program.exe
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14636_KWHZVZBRSYKRBPCZ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_5368_AXAWKZKESYQHCCRR
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -105,7 +106,7 @@ PUBLIC = C:\Users\Public
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\Lenovo\AppData\Roaming\Code\CachedData\57fd6d0195bb9b9d1b49f6da5db789060795de47
+VSCODE_CODE_CACHE_PATH = C:\Users\Lenovo\AppData\Roaming\Code\CachedData\da15b6fd3ef856477bf6f4fb29ba1b7af717770d
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
@@ -145,7 +146,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 165 Stepping 2, GenuineIntel
 # environment
 OS = Windows_NT
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\0fef3a94d6096a0b1a9a5118139e1cab-1.67.0-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\0fef3a94d6096a0b1a9a5118139e1cab-1.67.1-main-sock
 # environment
 HOMEPATH = \Users\Lenovo
 # environment
@@ -195,7 +196,7 @@ PROCESSOR_LEVEL = 6
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 14636
+VSCODE_PID = 5368
 # environment
 USERDOMAIN_ROAMINGPROFILE = USER
 # variable set hash-table stats:
@@ -210,13 +211,12 @@ USERDOMAIN_ROAMINGPROFILE = USER
 # C:\Program Files\Common Files\Oracle\Java\javapath (key C:/Program Files/Common Files/Oracle/Java/javapath, mtime 1647163998): 6 files, no impossibilities.
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1605754429): 30 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1605754429): 170 files, no impossibilities.
-# . (key d:/learning/master macro internship/tasks/task1/testing, mtime 1652030577): 10 files, no impossibilities.
+# . (key d:/learning/master macro internship/tasks/task1/testing, mtime 1652038681): 10 files, no impossibilities.
 # C:\sqlite3 (key C:/sqlite3, mtime 1648304628): 5 files, no impossibilities.
 # C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1623182137): 10 files, no impossibilities.
-# C:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/Lenovo/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1651774645): 4 files, no impossibilities.
+# C:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/Lenovo/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1652705235): 4 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1649096476): 8 files, no impossibilities.
 # C:\Program Files\MySQL\MySQL Shell 8.0\bin\ (key C:/Program Files/MySQL/MySQL Shell 8.0/bin/, mtime 1649891595): 9 files, no impossibilities.
-# C: could not be stat'd.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # C:\mingw64\bin (key C:/mingw64/bin, mtime 1526054436): 58 files, no impossibilities.
 # C:\Windows (key C:/Windows, mtime 1650817395): 108 files, no impossibilities.
@@ -225,13 +225,14 @@ USERDOMAIN_ROAMINGPROFILE = USER
 # C:\Program Files\Microsoft SQL Server\120\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/120/Tools/Binn/, mtime 1647171617): 4 files, no impossibilities.
 # C:\mingw64 (key C:/mingw64, mtime 1526054439): 12 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1647445555): 8 files, no impossibilities.
-# C:\Windows\system32 (key C:/Windows/system32, mtime 1652027801): 2895 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1652805411): 2895 files, no impossibilities.
 # C:\Program Files\CMake\bin (key C:/Program Files/CMake/bin, mtime 1647165483): 7 files, no impossibilities.
 # C:\Program Files\Graphviz\bin (key C:/Program Files/Graphviz/bin, mtime 1647858003): 61 files, no impossibilities.
+# C:\Program Files\Cppcheck (key C:/Program Files/Cppcheck, mtime 1652138049): 27 files, no impossibilities.
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1623182147): 5 files, no impossibilities.
 # C:\Program Files (x86)\GnuWin32\bin (key C:/Program Files (x86)/GnuWin32/bin, mtime 1647166228): 5 files, no impossibilities.
 
-# 3437 files, no impossibilities in 23 directories.
+# 3464 files, no impossibilities in 23 directories.
 
 # Implicit Rules
 
@@ -298,6 +299,6 @@ run:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sun May 08 19:23:19 2022
+# Finished Make data base on Wed May 18 02:27:17 2022
 
  
