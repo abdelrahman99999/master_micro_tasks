@@ -13,7 +13,9 @@
 #include <exception>
 #include<iostream>
 
-using namespace std;
+using std::cout;
+using std::cin;
+using std::endl;
 
 int main()
 {
@@ -36,7 +38,7 @@ int main()
     while(1){
         cout << "\n>> Choose a valid option\n";
         cin >> option;
-        while(option<1 || option>7){
+        while(option<1 || option>8){
             cout << "\n>> Choose a valid option\n";
             cin >> option;
         }
@@ -59,7 +61,7 @@ int main()
                 cout << "\n>> Enter a valid topology ID: ";
                 cin >> input;
                 try{
-                    API.writeJson(input);
+                    API.writeJson(input);//output will be in "output.json"
                     cout<<"sucessful operation\n";
                 }catch(exception &e){
                     cout << e.what() <<"\n";
@@ -122,6 +124,7 @@ int main()
             }break;
 
             case 7:{
+                //will be applied for test.json
                 API_Test test;
                 test.readJson_test();
                 test.writeJson_test();

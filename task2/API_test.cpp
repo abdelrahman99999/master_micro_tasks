@@ -1,7 +1,8 @@
 #include "API_test.h"
 #include "API_helper.h"
 #include <iostream>
-using namespace std;
+
+using std::cout;
 
 
 API_Test::API_Test(){

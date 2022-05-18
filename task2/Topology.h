@@ -13,8 +13,8 @@
 #include <string>
 #include <vector>
 #include <jsoncpp/json/json.h>
-using namespace std;
-
+using std::string;
+using std::vector;
 /**
  * @brief general class for topology
  * 
@@ -28,7 +28,7 @@ public:
     ~topology();
 
     string get_id();
-    void set_id(string );
+    void set_id(string id);
 
     Json::Value get_components();
     void set_components(Json::Value comp);

@@ -13,7 +13,8 @@
 #include <string>
 #include<vector>
 #include <jsoncpp/json/json.h>
-using namespace std;
+using std::string;
+using std::vector;
 /**
  * @brief general class for component(device) 
  * 

@@ -12,8 +12,8 @@
 #define API_HELPER_H
 
 #include<exception>
-
-using namespace std;
+using std::exception;
+using std::string;
 
 
 class NO_FILE : public exception{  

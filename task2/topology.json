@@ -1,6 +1,6 @@
 [
   {
-    "id": "top1",
+    "id": "top9",
     "components": [
       {
         "type": "resistor",
@@ -32,7 +32,7 @@
     ]
   },
   {
-    "id": "top88",
+    "id": "top55",
     "components": [
       {
         "type": "resistor",
@@ -48,7 +48,7 @@
         }
       },
       {
-        "type": "abdo",
+        "type": "aa",
         "id": "aaaaaaa",
         "resistance": {
           "default": 1000,
@@ -58,19 +58,6 @@
         "netlist": {
           "t1": "n1",
           "t2": "1234"
-        }
-      },
-      {
-        "type": "blabla",
-        "id": "bla1",
-        "resistance": {
-          "default": 1000,
-          "min": 100,
-          "max": 10000
-        },
-        "netlist": {
-          "t1": "n1",
-          "t2": "gnd"
         }
       }
     ]

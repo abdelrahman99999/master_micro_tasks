@@ -35,7 +35,7 @@ string Component::get_id(){
  * 
  * @param id 
  */
-void Component::set_id(string &id){
+void Component::set_id(string id){
     this->id = id;
 }
 /**
@@ -51,7 +51,7 @@ string Component::get_type(){
  * 
  * @param type 
  */
-void Component::set_type(string &type){
+void Component::set_type(string type){
     this->type = type;
 }
 

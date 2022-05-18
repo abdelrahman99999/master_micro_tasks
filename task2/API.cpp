@@ -10,6 +10,7 @@
 
 #include "API.h"
 #include <filesystem>
+using std::endl;
 /**
  * @brief Construct a new Result:: Result object
  * 
@@ -34,7 +35,7 @@ Result::~Result(){
  */
 Result Result::readJson(string FileName){
 
-    ifstream input_handler(FileName, std::ifstream::binary);
+    std::ifstream input_handler(FileName, std::ifstream::binary);
     if(!input_handler.is_open())
     {
         throw NO_FILE();
@@ -51,7 +52,7 @@ Result Result::readJson(string FileName){
  * @return Result 
  */
 Result Result::writeJson(string TopologyID){
-    ofstream output_handler;
+    std::ofstream output_handler;
     output_handler.open("output.json");
     
     /////////////////////////////////////////////////
@@ -187,7 +188,6 @@ DeviceList Result::queryDevices(string TopologyID){
         }
     }else{//if there are list of topologies
         int flag=0;//flag used to know if no topology is found with the given topology id 
-        Json::Value newArray = Json::arrayValue;
         for (Json::ValueIterator topo_iterator = this->Json_obj.begin(); topo_iterator != this->Json_obj.end(); ++topo_iterator){
             /*loop ob topologies*/
             if ((*topo_iterator)["id"].asString().compare(TopologyID)==0){//if you find topology

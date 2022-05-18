@@ -18,7 +18,7 @@
 #include "API_helper.h"
 #include "Topology.h"
 #include "Component.h"
-using namespace std;
+using std::string;
 
 /**
  * @brief main class of API
