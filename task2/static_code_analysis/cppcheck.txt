@@ -1,0 +1,3 @@
+Topology.cpp:46:0: style: The function 'get_components' is never used. [unusedFunction]
+
+^
