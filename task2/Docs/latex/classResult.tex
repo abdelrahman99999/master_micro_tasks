@@ -1,0 +1,178 @@
+\hypertarget{classResult}{}\doxysection{Result Class Reference}
+\label{classResult}\index{Result@{Result}}
+
+
+main class of A\+PI  
+
+
+
+
+{\ttfamily \#include $<$A\+P\+I.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResult}{Result}} \mbox{\hyperlink{classResult_a645e751d39c7302ea80b9967e778a3a6}{read\+Json}} (string File\+Name)
+\begin{DoxyCompactList}\small\item\em used to Read a topology from a given J\+S\+ON file and store it in the memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classResult}{Result}} \mbox{\hyperlink{classResult_a369db54918260cd33b65ab1d90983d57}{write\+Json}} (string Topology\+ID)
+\begin{DoxyCompactList}\small\item\em Write a given topology from the memory to a J\+S\+ON file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classResult}{Result}} \mbox{\hyperlink{classResult_a05b8be43c632e09e24609f14bbb1f3ff}{delete\+Topology}} (string Topology\+ID)
+\begin{DoxyCompactList}\small\item\em Delete a given topology from memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Topology_8h_a32d8c8f0b28fa92a1437853afe5cfcd2}{Topology\+List}} \mbox{\hyperlink{classResult_abd297ebd672deba64de14a32d7d11653}{query\+Topologies}} ()
+\begin{DoxyCompactList}\small\item\em Query about which topologies are currently in the memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Component_8h_a47ea35b51ff281f35a2bece73433f34f}{Device\+List}} \mbox{\hyperlink{classResult_add0b454f6665836f26731cb108e65eb7}{query\+Devices}} (string Topology\+ID)
+\begin{DoxyCompactList}\small\item\em Query about which devices are in a given topology. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Component_8h_a47ea35b51ff281f35a2bece73433f34f}{Device\+List}} \mbox{\hyperlink{classResult_af961d09e614b9094aaf47eda4b46670c}{query\+Devices\+With\+Netlist\+Node}} (string Topology\+ID, string Netlist\+Node\+ID)
+\begin{DoxyCompactList}\small\item\em Query about which devices are connected to a given netlist node in a given topology. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classResult_a90f44667e23d25ccdeac37f00a74657b}{Result}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classResult}{Result}}\+:\+: \mbox{\hyperlink{classResult}{Result}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classResult_ab83cf33a31236b3da75d66aaf9a05ed0}{$\sim$\+Result}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classResult}{Result}}\+:\+: \mbox{\hyperlink{classResult}{Result}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classResult_ad3af15e45494f10800def207f7ad9156}\label{classResult_ad3af15e45494f10800def207f7ad9156}} 
+Json\+::\+Value \mbox{\hyperlink{classResult_ad3af15e45494f10800def207f7ad9156}{Json\+\_\+obj}}
+\begin{DoxyCompactList}\small\item\em //\+Object contain json data and operations are applied on it \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+main class of A\+PI 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classResult_a90f44667e23d25ccdeac37f00a74657b}\label{classResult_a90f44667e23d25ccdeac37f00a74657b}} 
+\index{Result@{Result}!Result@{Result}}
+\index{Result@{Result}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{Result()}{Result()}}
+{\footnotesize\ttfamily Result\+::\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classResult}{Result}}\+:\+: \mbox{\hyperlink{classResult}{Result}} object. 
+
+\mbox{\Hypertarget{classResult_ab83cf33a31236b3da75d66aaf9a05ed0}\label{classResult_ab83cf33a31236b3da75d66aaf9a05ed0}} 
+\index{Result@{Result}!````~Result@{$\sim$Result}}
+\index{````~Result@{$\sim$Result}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{$\sim$Result()}{~Result()}}
+{\footnotesize\ttfamily Result\+::$\sim$\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classResult}{Result}}\+:\+: \mbox{\hyperlink{classResult}{Result}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classResult_a05b8be43c632e09e24609f14bbb1f3ff}\label{classResult_a05b8be43c632e09e24609f14bbb1f3ff}} 
+\index{Result@{Result}!deleteTopology@{deleteTopology}}
+\index{deleteTopology@{deleteTopology}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{deleteTopology()}{deleteTopology()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classResult}{Result}} Result\+::delete\+Topology (\begin{DoxyParamCaption}\item[{string}]{Topology\+ID }\end{DoxyParamCaption})}
+
+
+
+Delete a given topology from memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Topology\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classResult}{Result}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResult_add0b454f6665836f26731cb108e65eb7}\label{classResult_add0b454f6665836f26731cb108e65eb7}} 
+\index{Result@{Result}!queryDevices@{queryDevices}}
+\index{queryDevices@{queryDevices}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{queryDevices()}{queryDevices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Component_8h_a47ea35b51ff281f35a2bece73433f34f}{Device\+List}} Result\+::query\+Devices (\begin{DoxyParamCaption}\item[{string}]{Topology\+ID }\end{DoxyParamCaption})}
+
+
+
+Query about which devices are in a given topology. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Topology\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Device\+List 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResult_af961d09e614b9094aaf47eda4b46670c}\label{classResult_af961d09e614b9094aaf47eda4b46670c}} 
+\index{Result@{Result}!queryDevicesWithNetlistNode@{queryDevicesWithNetlistNode}}
+\index{queryDevicesWithNetlistNode@{queryDevicesWithNetlistNode}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{queryDevicesWithNetlistNode()}{queryDevicesWithNetlistNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Component_8h_a47ea35b51ff281f35a2bece73433f34f}{Device\+List}} Result\+::query\+Devices\+With\+Netlist\+Node (\begin{DoxyParamCaption}\item[{string}]{Topology\+ID,  }\item[{string}]{Netlist\+Node\+ID }\end{DoxyParamCaption})}
+
+
+
+Query about which devices are connected to a given netlist node in a given topology. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Topology\+ID} & \\
+\hline
+{\em Netlist\+Node\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Device\+List 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResult_abd297ebd672deba64de14a32d7d11653}\label{classResult_abd297ebd672deba64de14a32d7d11653}} 
+\index{Result@{Result}!queryTopologies@{queryTopologies}}
+\index{queryTopologies@{queryTopologies}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{queryTopologies()}{queryTopologies()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Topology_8h_a32d8c8f0b28fa92a1437853afe5cfcd2}{Topology\+List}} Result\+::query\+Topologies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Query about which topologies are currently in the memory. 
+
+\begin{DoxyReturn}{Returns}
+Topology\+List 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResult_a645e751d39c7302ea80b9967e778a3a6}\label{classResult_a645e751d39c7302ea80b9967e778a3a6}} 
+\index{Result@{Result}!readJson@{readJson}}
+\index{readJson@{readJson}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{readJson()}{readJson()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classResult}{Result}} Result\+::read\+Json (\begin{DoxyParamCaption}\item[{string}]{File\+Name }\end{DoxyParamCaption})}
+
+
+
+used to Read a topology from a given J\+S\+ON file and store it in the memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em File\+Name} & name with extension of file of json \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classResult}{Result}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResult_a369db54918260cd33b65ab1d90983d57}\label{classResult_a369db54918260cd33b65ab1d90983d57}} 
+\index{Result@{Result}!writeJson@{writeJson}}
+\index{writeJson@{writeJson}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{writeJson()}{writeJson()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classResult}{Result}} Result\+::write\+Json (\begin{DoxyParamCaption}\item[{string}]{Topology\+ID }\end{DoxyParamCaption})}
+
+
+
+Write a given topology from the memory to a J\+S\+ON file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Topology\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classResult}{Result}} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{API_8h}{A\+P\+I.\+h}}\item 
+\mbox{\hyperlink{API_8cpp}{A\+P\+I.\+cpp}}\end{DoxyCompactItemize}

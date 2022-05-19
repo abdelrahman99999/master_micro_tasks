@@ -1,0 +1,25 @@
+\hypertarget{API_8cpp}{}\doxysection{A\+P\+I.\+cpp File Reference}
+\label{API_8cpp}\index{API.cpp@{API.cpp}}
+
+
+api provide operations applied on json  
+
+
+{\ttfamily \#include \char`\"{}A\+P\+I.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$filesystem$>$}\newline
+Include dependency graph for A\+P\+I.\+cpp\+:
+% FIG 0
+
+
+\doxysubsection{Detailed Description}
+api provide operations applied on json 
+
+\begin{DoxyAuthor}{Author}
+abdelrahman elsayed (\href{mailto:abdelrahmanelsayed341@gmail.com}{\texttt{ abdelrahmanelsayed341@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1
+\end{DoxyVersion}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
